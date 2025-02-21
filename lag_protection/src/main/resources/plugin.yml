@@ -1,0 +1,12 @@
+name: lag_protection
+main: com.aaron.lag_protection.Plugin
+version: 1.0
+api-version: 1.21.4
+authors: ["Aaron"]
+
+description: Saves your players from their bad Wi-Fi!
+
+commands:
+  getPing:
+    description: Get the ping of a given player
+    usage: /getping [player]
