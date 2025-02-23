@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "lag_protection",
+	"version": "${version}",
+	"name": "Lag Protection",
+	"description": "Reduces lag and optimizes performance in Minecraft.",
+	"authors": [
+		"Aaron"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/lag_protection/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.aaron.LagProtection"
+		],
+		"client": [
+			"com.aaron.LagProtectionClient"
+		]
+	},
+	"mixins": [
+		"lag_protection.mixins.json",
+		{
+			"config": "lag_protection.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

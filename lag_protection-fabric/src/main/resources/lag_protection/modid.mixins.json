@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.aaron.lag_protection.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
